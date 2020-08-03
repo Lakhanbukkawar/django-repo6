@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/operation" method="POST">{% csrf_token %}
+        <input type="number" name="val1" placeholder="First Number">
+        <input type="number" name="val2" placeholder="Second Number">
+        <select name="op">
+            <option value="+">Add</option>
+            <option value="-">Sub</option>
+            <option value="*">Mul</option>
+            <option value="/">Div</option>
+
+        </select>
+        <button type="submit" value="submit">submit</button>
+
+
+    </form>
+</body>
+</html>
